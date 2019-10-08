@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html lang = "en us">
-
 <head>
-
-<meta charset = "UTF-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Friend Finder</title>
-
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrap.cdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <style>
+        * { 
+            font-family: 'Nunito', sans-serif;
+            }
+    </style>
 </head>
-
 <body>
-
-<div class="container">
-
-    <div class="jumbotron">
-
-        <h1 class="text-center">Friend FInder</h1>
-        <br>
-        <h2 class="text-center">Complete the survery on the next page and find a new friend!</h2>
-        <br>
-
-        <div class="text-center">
-        <a href="/tables"><button type="button" class="btn btn-lg btn-primary">View Tables</button>
-        <a href="/reservations"><button type="button" class="btn btn-lg btn-danger">Make Reservations</button>
-
-
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Friend Finder</h1>
+            <br>
+            <h2 class="text-center">Complete the survery and find a new friend! Start by clicking the button below.</h2>
+            <br>
+            <div class="text-center">
+                    <a class="btn btn-primary btn-lg" href="survey.html" role="button">Take the Survey!</a>
+            </div>
         </div>
-    </div>
-
     <footer class="footer">
         <div class="container">
 
-            <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+            <p><a href="/api/friends">Friend API</a></p>
 
         </div>
     </footer>
-
-</div>
+    </div>
 
 </body>
 </html>
