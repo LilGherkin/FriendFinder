@@ -1,6 +1,6 @@
 //Node modules needed for thing to function. 
-const express = require("express");
-const path = require("path");
+var express = require("express");
+var path = require("path");
 //Set up a port that is determined by Heroku, or use port 8080 if not on Heroku. 
 var PORT = process.env.PORT || 8080;
 //Enables express per documentation
