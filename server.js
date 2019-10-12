@@ -9,6 +9,9 @@ var app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
+require("./app/routing/APIRoutes.js")(app);
+require("./app/routing/HTMLRoutes.js")(app);
+
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
 });
